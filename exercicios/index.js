@@ -6,11 +6,11 @@ const express = require('express');
 const app = express();
 
 app.get("/", function(req, res) {
-    res.send("Bem vindo") //Para devolver uma resposta
+    res.send("<h1>Bem vindo</h1>") //Para devolver uma resposta
 })
 
 app.get("/blog", function(req, res) {
-    res.send("Bem vindo ao blog") //Para devolver uma resposta
+    res.send("Bem vindo ao blog do lucas") //Para devolver uma resposta
 })
 
 app.get("/canal/youtube", function(req, res) {

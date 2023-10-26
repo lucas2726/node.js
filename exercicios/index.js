@@ -6,7 +6,15 @@ const express = require('express');
 const app = express();
 
 app.get("/", function(req, res) {
-    
+    res.send("Bem vindo") //Para devolver uma resposta
+})
+
+app.get("/blog", function(req, res) {
+    res.send("Bem vindo ao blog") //Para devolver uma resposta
+})
+
+app.get("/canal/youtube", function(req, res) {
+    res.send("Bem vindo ao canal do youtube") //Para devolver uma resposta
 })
 
 // Inicia o servidor Express na porta especificada

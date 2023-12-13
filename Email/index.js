@@ -1,18 +1,18 @@
 const nodemailer = require("nodemailer")
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.umbler.com",
+    host: "smtp.gmail.com",
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
-        user: "lucas@meuddsite.com",
-        pass: "L234587@"
+        user: "lucasbueno722g@gmail.com",
+        pass: "lb1008@#"
     }
 })
 
 transporter.sendMail({
-    from: "Lucas Bueno <lucas@meuddsite.com>",
-    to: "lucasbueno722g@gmail.com",
+    from: "Lucas Bueno <lucasbueno722g@gmail.com>",
+    to: "buenolucas314@gmail.com",
     subject: "Oi, sou lucas",
     text: "simmmmmmmmmmm",
     html: "Ola, sou lucassssssssssssss"
